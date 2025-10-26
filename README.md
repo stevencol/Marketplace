@@ -456,7 +456,7 @@ En este documento se describe el proyecto, su funcionalidad y las tecnologías u
 
 ## Uso de swagger
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 Para acceder a la documentación de la API, puedes utilizar Swagger. La URL por defecto es:
 
 ```
@@ -465,7 +465,7 @@ http://localhost:8080/api/swagger.html
 
 ## Diagrama de Clases-Entitys
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 ## Manejo de Errores
 
@@ -474,4 +474,4 @@ http://localhost:8080/api/swagger.html
 
 ## Resultados SonarQube
 
-![img.png](img.png)
+![img.png](img/img.png)
