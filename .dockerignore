@@ -1,0 +1,36 @@
+# Build outputs
+.gradle/
+build/
+bin/
+out/
+
+# IDE
+.idea/
+*.iml
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Sensitive files
+**/application-local.yml
+**/application-dev.yml
+**/keystore.p12
+**/credentials.json
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db

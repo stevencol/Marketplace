@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        //mavenLocal()
+        //maven { url = '...' }
+        gradlePluginPortal()
+    }
+}
+
+buildCache {
+    local {
+        directory = new File(rootDir, 'build-cache')
+    }
+}
+
+rootProject.name = 'Marketplace'
+
+include ':app-service'
+include ':model'
+include ':usecase'
+include ':enum'
+include ':constants'
+project(':enum').projectDir = file('./common/enum')
+project(':constants').projectDir = file('./common/constants')
+project(':app-service').projectDir = file('./applications/app-service')
+project(':model').projectDir = file('./domain/model')
+project(':usecase').projectDir = file('./domain/usecase')
+include ':api-rest'
+project(':api-rest').projectDir = file('./infrastructure/entry-points/api-rest')
+include ':jpa-repository'
+project(':jpa-repository').projectDir = file('./infrastructure/driven-adapters/jpa-repository')

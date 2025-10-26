@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  bankinc-api:
+    build:
+      context: ./
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_NAME=markeplace
+      - DATABASE_PASSWORD=1994
+      - DATABASE_USER=root
+      - DATABASE_URL=jdbc:mysql://mysql-markeplace:3306/
+    depends_on:
+      - mysql-markeplace
+    restart: unless-stopped
+
+  mysql-markeplace:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 1994
+      MYSQL_DATABASE: markeplace
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  mysql-data:
+
+
