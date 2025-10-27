@@ -4,8 +4,7 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x ./gradlew
-RUN ./gradlew clean build -x test -x validateStructure
-
+RUN ./gradlew clean build -x check -x test -x validateStructure -Pproduction
 FROM openjdk:21-jdk
 RUN groupadd -r appgroup && useradd -r -g appgroup appuser
 USER appuser
