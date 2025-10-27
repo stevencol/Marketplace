@@ -25,7 +25,7 @@ En este documento se describe el proyecto, su funcionalidad y las tecnologías u
 
 ## Ejecución de pruebas 🔬
 
-- Es necesario contar con Java 21 y Maven instalado.
+- Es necesario contar con Java 21
     1. Dirigirse a la raíz del proyecto.
     2. Ejecutar el comando ./gradlew :usecase:test -x validateStructure --no-configuration-cache
 
