@@ -1,6 +1,6 @@
 package co.bankinc.usecase;
 
-import co.bankinc.model.card.gateways.out.ICardRepository;
+import co.bankinc.model.card.gateways.ICardRepository;
 import co.bankinc.model.card.model.CardModel;
 import co.bankinc.model.card.model.CardRechargeModel;
 import co.bankinc.usecase.usecase.CardUseCase;

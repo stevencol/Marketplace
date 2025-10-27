@@ -1,7 +1,7 @@
 package co.bankinc.usecase.usecase;
 
 import co.bankinc.model.card.gateways.in.ICardUseCase;
-import co.bankinc.model.card.gateways.out.ICardRepository;
+import co.bankinc.model.card.gateways.ICardRepository;
 import co.bankinc.model.card.model.CardModel;
 import co.bankinc.model.card.model.CardRechargeModel;
 import lombok.AllArgsConstructor;

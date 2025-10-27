@@ -1,6 +1,6 @@
 package co.bankinc.usecase;
-import co.bankinc.model.card.gateways.out.ICardRepository;
-import co.bankinc.model.card.gateways.out.ITransactionRepository;
+import co.bankinc.model.card.gateways.ICardRepository;
+import co.bankinc.model.card.gateways.ITransactionRepository;
 import co.bankinc.model.card.model.CardModel;
 import co.bankinc.model.card.model.TransactionModel;
 import co.bankinc.usecase.enun.TransactionStatus;

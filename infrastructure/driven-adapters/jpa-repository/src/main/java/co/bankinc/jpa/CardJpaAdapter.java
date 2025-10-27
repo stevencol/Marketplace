@@ -2,7 +2,7 @@ package co.bankinc.jpa;
 
 import co.bankinc.jpa.entity.CardEntity;
 import co.bankinc.jpa.mapper.CardModelMapper;
-import co.bankinc.model.card.gateways.out.ICardRepository;
+import co.bankinc.model.card.gateways.ICardRepository;
 import co.bankinc.model.card.model.CardModel;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
